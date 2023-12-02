@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Javascript Calculator</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <main class="m-5 p-5 shadow-xl rounded-xl flex flex-col gap-3">
+            <h1 class="text-center text-2xl font-bold text-blue-500">
+                Calculator!
+            </h1>
+            <section
+                class="rounded-xl shadow-inner bg-gray-50 p-5 flex flex-col gap-5"
+            >
+                <form action="" class="flex flex-col gap-3">
+                    <div class="flex flex-col gap-3">
+                        <label for="first-number">First number:</label>
+                        <input
+                            type="text"
+                            name="first-number"
+                            id="first-number"
+                            placeholder="Your number . . ."
+                            class="p-2 border-2 rounded-md focus:ring-blue-500 focus:ring focus:ring-offset-2 focus:ring-offset-white"
+                        />
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <label for="action">Action :</label>
+                        <select
+                            name="action"
+                            id="action"
+                            class="p-2 border-2 rounded-md focus:ring-blue-500 focus:ring focus:ring-offset-2 focus:ring-offset-white"
+                        >
+                            <option value="ACTIONS_ENUM.Add" selected>+</option>
+                            <option value="ACTIONS_ENUM.Subtract">-</option>
+                            <option value="ACTIONS_ENUM.Multiply">*</option>
+                            <option value="ACTIONS_ENUM.Divide">:</option>
+                            <option value="ACTIONS_ENUM.Square">
+                                x&#8319;
+                            </option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <label for="second-number">Second number:</label>
+                        <input
+                            type="text"
+                            name="second-number"
+                            id="second-number"
+                            placeholder="Your number . . ."
+                            class="p-2 border-2 rounded-md focus:ring-blue-500 focus:ring focus:ring-offset-2 focus:ring-offset-white"
+                        />
+                    </div>
+                    <div class="text-right">
+                        <button
+                            type="button"
+                            class="shadow-lg px-4 bg-gradient-to-br from-blue-500 to-blue-700 hover:from-blue-700 hover:to-blue-900 text-white rounded-md focus:ring-blue-500 focus:ring focus:ring-offset-2 focus:ring-offset-white"
+                            id="calculate-btn"
+                        >
+                            <div class="hover:scale-110 py-1">Calculate</div>
+                        </button>
+                    </div>
+                </form>
+                <div
+                    class="text-md bg-gradient-to-br from-green-500 to-green-700 text-white p-3 rounded-md shadow-md hidden"
+                    id="calculate-results"
+                ></div>
+            </section>
+            <h1 class="text-center text-2xl font-bold text-blue-500">Quiz!</h1>
+            <section
+                class="rounded-xl shadow-inner bg-gray-50 p-5 flex flex-col gap-5"
+            >
+                <form action="">
+                    <div>
+                        <input type="radio" name="r" id="r" value="Ra" />
+                        <label for="r">Ra</label>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <script src="js/general.js"></script>
+        <script src="js/calculator.js"></script>
+        <script src="js/survey.js"></script>
+    </body>
+</html>
