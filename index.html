@@ -70,14 +70,26 @@
             <section
                 class="rounded-xl shadow-inner bg-gray-50 p-5 flex flex-col gap-5"
             >
-                <form action="">
-                    <div>
-                        <input type="radio" name="r" id="r" value="Ra" />
-                        <label for="r">Ra</label>
+                <form action="" id="quiz-form" class="flex flex-col gap-5">
+                    <div class="text-right">
+                        <button
+                            type="button"
+                            class="shadow-lg bg-gradient-to-br from-blue-500 to-blue-700 hover:from-blue-700 hover:to-blue-900 text-white rounded-md focus:ring-blue-500 focus:ring focus:ring-offset-2 focus:ring-offset-white"
+                            id="quiz-submit"
+                        >
+                            <div class="hover:scale-110 py-1 px-4">Submit</div>
+                        </button>
                     </div>
+                    <div
+                        class="text-white p-2 bg-gradient-to-br rounded text-lg font-semibold hidden"
+                        id="quiz-results"
+                    ></div>
                 </form>
             </section>
         </main>
+        <script src="js/answer.js"></script>
+        <script src="js/question.js"></script>
+        <script src="js/questionManager.js"></script>
         <script src="js/general.js"></script>
         <script src="js/calculator.js"></script>
         <script src="js/survey.js"></script>
